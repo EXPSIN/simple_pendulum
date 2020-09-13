@@ -8,7 +8,7 @@
 
 close all; clear; clc;
 addpath('./code');              % 添加代码路径
- 
+
 cfg  = sim_config();            % 仿真配置
 pend = sim_pendulum();          % 被控对象（摆的配置）
 SG   = sim_graphic(pend);     	% 图形化界面
