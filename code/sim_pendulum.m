@@ -15,7 +15,7 @@ pend.data.k = 0.1;    % 摆摩擦系数（一般情况下，摩擦系数均小于1）
 
 pend.x = randn(2,1);          % 系统状态量 x(1)-角度， x(2)-角速度
 pend.u = zeros(1,1);          % 输入变量
-pend.exp_x = [pi/5; 0];       % 期望状态量
+pend.exp_x = [pi; 0];       % 期望状态量
 
 end
 
