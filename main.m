@@ -17,7 +17,7 @@ for i = 1:cfg.N
     t = cfg.t(i);
 
     % 控制器
-    pend.u = controller(pend.x, pend.data);
+    pend.u = controller(pend.x, pend.exp_x, pend.data);
     
     % 被控对象
     pend.x = rungekutta(@pendulum, pend.x, pend.u, cfg.T, pend.data);
